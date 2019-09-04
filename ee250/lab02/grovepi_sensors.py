@@ -1,7 +1,7 @@
 """ EE 250L Lab 02: GrovePi Sensors
 
 List team members here.
-
+Yubin Lin
 Insert Github repository link here.
 """
 
@@ -19,7 +19,8 @@ import time
 # By appending the folder of all the GrovePi libraries to the system path here,
 # we are successfully `import grovepi`
 sys.path.append('../../Software/Python/')
-# This append is to support importing the LCD library.
+# This append is to support importing the 
+library.
 sys.path.append('../../Software/Python/grove_rgb_lcd')
 
 import grovepi
@@ -29,7 +30,9 @@ is, if you run `python3 grovepi_sensors.py` in terminal, this if-statement will
 be true"""
 if __name__ == '__main__':
     PORT = 4    # D4
-
+    POT = 2
+setRGB(0,255,0)
+setText("   "+"cm"+"           "+"   "+"cm")
     while True:
         #So we do not poll the sensors too quickly which may introduce noise,
         #sleep for a reasonable time of 200ms between each iteration.
